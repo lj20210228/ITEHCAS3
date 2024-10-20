@@ -3,7 +3,7 @@
     require 'model/prijava.php';
 
     //ako korisnik nije logovan, ne može otići direktno na url /home.php
-    // Jesic
+    
     session_start(); //resume existing session
     if(!isset($_SESSION['user_id'])) {
         header('Location: index.php');
